@@ -13,11 +13,11 @@ public class CartService {
         this.cartRepository = cartRepository;
     }
 
-    public void 장바구니담기(int cId, int pId, int qty){
+    public void 장바구니담기(int ｕId, int pId, int qty){
         // 1. cart insert
     }
 
-    public List<CartListView> 장바구니보기(int uId){
+    public CartListView 장바구니보기(int uId){
         // 1. cart selectJoin(uId)
         return null;
     }
