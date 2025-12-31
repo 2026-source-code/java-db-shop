@@ -10,7 +10,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public void 회원가입(String name, String email){
+    public void 회원가입(String uName, String uPassword, String uEmail){
         // 1. insert
     }
 }

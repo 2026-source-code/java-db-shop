@@ -6,6 +6,7 @@ import com.mtcoding.shop.repository.OrderRepository;
 import com.mtcoding.shop.repository.ProductRepository;
 import com.mtcoding.shop.repository.UserRepository;
 import com.mtcoding.shop.service.ProductService;
+import com.mtcoding.shop.service.UserService;
 
 public class ShopApp {
     public static void main(String[] args) {
@@ -15,7 +16,11 @@ public class ShopApp {
         OrderRepository orderRepository = new OrderRepository();
 
         // 1. 상품등록
-        ProductService ps = new ProductService(productRepository);
-        ps.상품등록("바나나", 100, 5);
+        //ProductService ps = new ProductService(productRepository);
+        //ps.상품등록("바나나", 100, 5);
+
+        // 2. 회원가입
+        UserService userService = new UserService(userRepository);
+        userService.회원가입("ssar", "1234", "ssar@nate.com");
     }
 }
